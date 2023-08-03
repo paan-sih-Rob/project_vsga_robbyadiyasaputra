@@ -1,0 +1,8 @@
+Note : Melanjutkan Pembaruan 
+Tugas VSGA_Junior Web Deveplopment
+
+    * Membuat Footer
+    * Memperbarui Penambahan page about pada halaman Home 
+    * Memperbarui IDCard dijadikan satu halaman pada menu Home
+    * Memperbarui Menu Project untuk menampung peroject yang telah dibuat
+    * Mengupload Hasil Project ke repistory penyimpanan akun Github

@@ -1,0 +1,91 @@
+/*design css style page contact*/
+.page-contact {
+    font-family: 'Rubik Moonrocks', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--background);
+  }
+  .contact {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,0.1fr));
+    grid-gap: 5px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-contact {
+    position: relative;
+    background: whitesmoke;
+    overflow: hidden;
+    border-radius: 5%;
+    border: 1px solid #1B1E23;
+  }
+  .box-contact {
+    position: relative;
+    background: #1c1c1c;
+  }
+  
+  /*css style animation rotate*/
+  .box-contact::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(0deg,transparent,transparent,aqua,aqua,aqua);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: contact 1.6s linear infinite;
+  }
+  @keyframes contact {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+  }
+  /*css style animation rotate*/
+  
+  .box-contact .contact-me{
+    position: absolute;
+    inset: 4px;
+    background: var(--background);
+    padding: 50px 40px;
+    border-radius: 10px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  .box-contact .contact-me input {
+    position: relative;
+    padding: 10px 5px 5px;
+    background: transparent;
+    outline: 1px solid darkslategray;
+    border: 1px solid whitesmoke;
+    box-shadow: none;
+    color: white;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    transition: 0.5s;
+    z-index: 3;
+  }
+  .box-contact .contact-me input:hover{
+    background: darkslategray;
+    z-index: 3;
+  }
+  .box-contact .contact-me textarea {
+    position: relative;
+    padding: 2px 2px 2px;
+    background: transparent;
+    outline: none;
+    border: 1px solid whitesmoke;
+    box-shadow: none;
+    color: white;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    transition: 0.5s;
+    z-index: 9;
+  }
+  .box-contact .contact-me textarea:hover{
+    background: darkslategray;
+  }
+  /*design css style page idcard*/
